@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profiles</title>
+</head>
+<body>
+{% for profile in profiles %}
+  
+  <a href="{% url 'images:detail' profile.id %}"><img src="{{ profile.photo.url }}" width="240" height="240" alt="Image not found"></a>
+  
+{% endfor %}
+</body>
+</html>

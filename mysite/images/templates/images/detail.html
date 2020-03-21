@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image detail</title>
+</head>
+<body>
+
+  <img src="{{ profile.photo.url }}" width="500" height="500" alt="Image not found">
+  <br>
+  {{ profile.user.username.title }}. 
+  {{ profile.dob }}
+  <br>
+  <span style="font-size:100px;">{{ total_views }} view{{ total_views|pluralize }}</span>
+</body>
+</html>
