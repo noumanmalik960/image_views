@@ -1,3 +1,4 @@
+# This file should be ignored!
 # Inheritance in python
 
 # class Person():
